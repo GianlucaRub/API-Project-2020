@@ -15,3 +15,53 @@ Example of actions:
 (number)r: redo "number" action that have previously been undone;
 
 q: signal of termination;
+
+#Example
+1,2c
+fist row
+second row
+.
+2,3c
+new second row
+third row
+.
+1,3p
+1,1c
+new first row
+.
+1,2p
+2,2d
+4,5p
+1,3p
+4,5d
+1,4p
+3u
+1,6p
+1r
+1,3p
+q
+
+It gives this as output:
+first row
+new second row
+third row
+new first row
+new second row
+.
+.
+new first row
+third row
+.
+new first row
+third row
+.
+.
+first row
+new second row
+third row
+.
+.
+.
+new first row
+new second row
+third row
