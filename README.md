@@ -16,8 +16,8 @@ Example of actions:
 
 q: signal of termination;
 
-#Example
-1,2c
+# Example
+1,2c \n
 fist row
 second row
 .
